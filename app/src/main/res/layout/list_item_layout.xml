@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="125dp"
+    android:layout_margin="6dp"
+
+    android:id="@+id/card_Item"
+    android:weightSum="1"
+    android:background="@color/colorFront"
+    android:elevation="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="match_parent"
+            android:text="Item Name"
+            android:gravity="center"
+            android:id="@+id/card_itemname"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@android:drawable/ic_menu_delete"
+            android:id="@+id/delete"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:padding="6dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qty"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:id="@+id/purchased_qty"
+                    android:textColor="@color/colorGreen"
+                    android:text="10"
+                    android:gravity="center_horizontal|end"
+                    android:layout_marginRight="6dp"
+                    android:textSize="22dp"
+                    />
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:id="@+id/required_qty"-->
+                    <!--android:textColor="@color/colorBlue"-->
+                    <!--android:text="10"-->
+                    <!--android:gravity="center_horizontal|start"-->
+                    <!--android:layout_marginLeft="6dp"-->
+                    <!--android:textSize="24dp"-->
+                    <!--/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/green"
+            android:id="@+id/done"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:id="@+id/price_item"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="10"
+                android:textSize="24dp"
+                android:gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

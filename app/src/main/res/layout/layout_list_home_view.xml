@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="125dp"
+    android:layout_margin="6dp"
+    android:padding="0dp"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/rond1"
+    android:elevation="8dp"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:foreground="?selectableItemBackground"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:text="List Name"
+                android:id="@+id/card_ListName"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+
+                android:gravity="center|bottom"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:text="Creator"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/owner"
+                android:textSize="12dp"
+                android:gravity="center|top"
+                android:textColor="@android:color/holo_red_dark"/>
+        </LinearLayout>
+        <!--<Spinner-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/spinner_cardList"-->
+            <!--android:spinnerMode="dropdown">-->
+
+        <!--</Spinner>-->
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:indeterminate="false"
+        android:max="100"
+        android:padding="6dp"
+        android:progress="40"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:padding="6dp"
+        android:orientation="horizontal"
+        >
+
+        <!--<ImageButton-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.25"-->
+            <!--android:id="@+id/card_ListShare"-->
+            <!--android:src="@android:drawable/ic_menu_share"-->
+            <!--android:background="@android:color/transparent"-->
+
+            <!--/>-->
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:id="@+id/card_ListEdit"
+            android:src="@android:drawable/ic_menu_edit"
+
+
+            android:background="@android:color/transparent"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:text="Users 4"
+                android:gravity="center"
+                android:id="@+id/card_users"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

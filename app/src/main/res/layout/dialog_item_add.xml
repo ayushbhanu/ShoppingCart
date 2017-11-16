@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="16dp"
+    android:clipToPadding="false"
+>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:layout_gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/add_itemName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Item Name"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/add_qty"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="60dp"
+                android:hint="Qty"></EditText>
+            <EditText
+                android:id="@+id/add_price"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="60dp"
+                android:hint="Price"></EditText>
+        </LinearLayout>
+
+            />
+
+
+    </LinearLayout>
+
+</FrameLayout>
