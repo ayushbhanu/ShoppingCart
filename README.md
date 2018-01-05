@@ -1,8 +1,8 @@
 # ShoppingCart
 
 In this app user login through Google FIREBASE and make a personal shopping list and user can remove or
-add any item. User can share his list with other users . All the user and list information stores in firebase in
-form of Json.
+add any item. User can share his list with other users . All the user and list information stores in firebase in the 
+form of Json. User can also generate Bill Invoice of the bought items.
 
 
 ![screenshot_2017-11-16-19-45-11-886_abrv0765 shoppingcart 1](https://user-images.githubusercontent.com/22625247/32897846-a4dca900-cb0c-11e7-8e11-62336b67a5f1.png)
